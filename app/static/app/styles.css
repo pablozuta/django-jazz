@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  padding: 0;
+  margin: 0.7;
+  font-family: BlinkMacSystemFont, sans-serif;
+  font-size: 1.15rem;
+  margin-inline: 0.8rem;
+}
+
+a {
+  margin: 1px solid coral;
+  color: coral;
+  text-decoration: none;
+}
+
+h3 {
+  color: coral;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 480px;
+  height: 400px;
+  object-fit: cover;
+}
+

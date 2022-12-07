@@ -1,0 +1,38 @@
+{% extends 'app/layout.html' %}
+{% block body %}
+<div>
+
+  <div>
+    <h2>Jazz Records </h2>
+    <h3>A Love Supreme</h3>
+    <p>John Coltrane recorded A Love Supreme in December of 1964 and released it the following year. He presented it as
+      a spiritual declaration that his musical devotion was now intertwined with his faith in God. In many ways, the
+      album mirrors Coltrane's spiritual quest that grew out of his personal troubles, including a long struggle with
+      drug and alcohol addiction.</p>
+    <p>"I remember they cut the lights down kind of," says McCoy Tyner, who played piano on A Love Supreme as a member
+      of Coltrane's band in the early and mid-'60s. "The lights were dimmed in the studio. I guess they were trying to
+      get a nightclub effect or whatever. I don't know if it was John's suggestion or whatever. I remember the lights
+      being dimmed."</p>
+    <p>"You see, one thing about that music is that it showed you that we had reached a level where you could move the
+      music around. John had a very wonderful way of being flexible with the music, flexing it, stretching it. You know,
+      we reflected that kind of thing. He gave us the freedom to do that. We thought of something, 'Oh, then we'll play
+      it,' you know? And he said, 'Yeah, I have a feeling'--you know? And all that freedom just came together when we
+      did that record."</p>
+
+  </div>
+</div>
+
+<h2>Most Important Jazz Records</h2>
+<ul>
+  <li>{{ record.0.title }}</li>
+  <li>{{ record.1.title }}</li>
+  <li>{{ record.2.title }}</li>
+</ul>
+
+
+
+
+<a href="{% url 'biography' %}">Biography</a>
+<br>
+<a href="{% url 'home' %}">Back Home</a>
+{% endblock body %}

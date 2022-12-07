@@ -1,0 +1,19 @@
+--se crea projecto main
+--se crea app "app"
+--se hace el ruteo para app con 3 vistas
+[python manage.py startapp [nombre-app]]
+[python manage.py startapp [nombre app]]
+
+
+
+(al principio no resultaba el ruteo de las urls en el archivo principal y era por que faltaba una coma entre las rutas del path url :) )
+
+para importar css creamos una carpeta "static" en nuestra app y dentro otra carpeta con el nombre de nuestra app con nuestros archivos .css dentro
+
+para cargar archivos css
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/main.css' %}">
+
+[python manage.py migrate]
+[python manage.py makemigrations]
+[python manage.py shell]
